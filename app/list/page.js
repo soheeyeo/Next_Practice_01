@@ -10,26 +10,6 @@ export default function List() {
         <div>
             <h4 className="title">상품목록</h4>
 
-            <span>{수량[0]}</span>
-            <button onClick={()=>{
-                let copy = [...수량]
-                copy[0]++
-                수량변경(copy)
-            }}>+</button>
-            <span>{수량[1]}</span>
-            <button onClick={()=>{
-                let copy = [...수량]
-                copy[1]++
-                수량변경(copy)
-            }}>+</button>
-            <span>{수량[2]}</span>
-            <button onClick={()=>{
-                let copy = [...수량]
-                copy[2]++
-                수량변경(copy)
-            }}>+</button>
-
-
             {
                 상품.map((a, i)=>{
                     return (
